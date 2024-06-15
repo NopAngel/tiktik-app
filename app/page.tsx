@@ -19,7 +19,7 @@ export default async function Home() {
           <FormDB />
           {db1?.map((item: any, index) => (
             <Card
-              ID={index}
+              key={index}
               Content={item.content}
               CreatedAt={item.created_at}
               UserImg={item.user_img}
