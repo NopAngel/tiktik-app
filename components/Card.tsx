@@ -1,11 +1,9 @@
 export default function Card({
-  ID,
   CreatedAt,
   Content,
   UserName,
   UserImg,
 }: {
-  ID: any;
   CreatedAt: any;
   Content: any;
   UserName: any;
