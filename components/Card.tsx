@@ -5,7 +5,7 @@ export default function Card({
   UserName,
   UserImg,
 }: {
-  ID: number;
+  ID: any;
   CreatedAt: any;
   Content: any;
   UserName: any;
