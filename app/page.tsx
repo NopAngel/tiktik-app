@@ -17,15 +17,14 @@ export default async function Home() {
         <Navbar />
         <section className="lg:w-[450px] sm:w-full mx-auto mt-9">
           <FormDB />
-          {db1?.map((item: DataProps, index) => (
-           <div key={index}>
-              <Card
-              Content={item.content}
-              CreatedAt={item.created_at}
-              UserImg={item.user_img}
-              UserName={item.user_name}
-            />
-           </div>
+          {db1?.map((index: any, item) => (
+            <Card
+            ID={item}
+            Content={index.content}
+            CreatedAt={index.created_at}
+            UserImg={index.user_img}
+            UserName={index.user_name}
+          />
           ))}
         </section>
       </section>
