@@ -19,7 +19,6 @@ export default async function Home() {
           <FormDB />
           {db1?.map((item: DataProps, index => (
             <Card
-              ID={1}
               Content={item.content}
               CreatedAt={item.created_at}
               UserImg={item.user_img}
