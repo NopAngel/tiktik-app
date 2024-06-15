@@ -18,13 +18,14 @@ export default async function Home() {
         <section className="lg:w-[450px] sm:w-full mx-auto mt-9">
           <FormDB />
           {db1?.map((item: DataProps, index) => (
-            <Card
-              ID={index}
+           <div key={index}>
+              <Card
               Content={item.content}
               CreatedAt={item.created_at}
               UserImg={item.user_img}
               UserName={item.user_name}
             />
+           </div>
           ))}
         </section>
       </section>
