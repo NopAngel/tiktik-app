@@ -17,7 +17,7 @@ export default async function Home() {
         <Navbar />
         <section className="lg:w-[450px] sm:w-full mx-auto mt-9">
           <FormDB />
-          {db1?.map((item: DataProps, index => (
+          {db1?.map((item, index => (
             <Card
               ID={index}
               Content={item.content}
