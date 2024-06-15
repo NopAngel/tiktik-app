@@ -20,10 +20,10 @@ export default async function Home() {
           {db1?.map((item: DataProps, index => (
             <Card
               ID={1}
-              Content={index.content}
-              CreatedAt={index.created_at}
-              UserImg={index.user_img}
-              UserName={index.user_name}
+              Content={item.content}
+              CreatedAt={item.created_at}
+              UserImg={item.user_img}
+              UserName={item.user_name}
             />
           ))}
         </section>
