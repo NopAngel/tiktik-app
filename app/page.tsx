@@ -21,7 +21,7 @@ export default async function Home() {
             <Card
               key={index}
               Content={item.content}
-              CreatedAt={item.created_at}
+             
               UserImg={item.user_img}
               UserName={item.user_name}
             />
