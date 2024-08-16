@@ -17,13 +17,13 @@ export default async function Home() {
         <Navbar />
         <section className="lg:w-[450px] sm:w-full mx-auto mt-9">
           <FormDB />
-          {db1?.map((item: any, index) => (
+          {db1?.map(({ id, content, user_img, user_name }) => (
             <Card
-              key={index}
-              Content={item.content}
+              key={id}
+              Content={content}
              
-              UserImg={item.user_img}
-              UserName={item.user_name}
+              UserImg={user_img}
+              UserName={user_name}
             />
           ))}
         </section>
